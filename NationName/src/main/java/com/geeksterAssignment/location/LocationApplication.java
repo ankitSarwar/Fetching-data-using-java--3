@@ -18,7 +18,7 @@ public class LocationApplication {
 
 	public static void main(String[] args) throws  Exception{
 
-		 String url ="https://api.chucknorris.io/jokes/random";
+		 String url ="https://api.nationalize.io/?name=nathaniel";
 		HttpRequest request=HttpRequest.newBuilder().uri(URI.create(url)).build();
 		var client= HttpClient.newBuilder().build();
 		HttpResponse<String> response = client.send(request,HttpResponse.BodyHandlers.ofString());
